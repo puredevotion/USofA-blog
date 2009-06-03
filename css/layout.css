@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+#container {
+	width: 960px;
+}
+
+#header {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#titel {
+	margin-left: 110px;
+}
+
+#twitter {
+	display: block;
+	float: right;
+	margin-right: 15px;
+	width:46px; 
+	height:46px;
+	background-image:url(../images/index_05.png);
+	background-repeat:no-repeat;
+}
+
+#twitter:hover {
+	background-position: -46px 0;
+}
+	
+
+#rss {
+	float: right;
+	margin-right: 10px;
+	width:46px; 
+	height:46px;
+}
+
+#banner {
+	margin-top: 10px;
+	background-image:url(../images/index_15.png);
+	background-repeat: repeat-x;
+}
+
+#usa-vlag {
+	margin-left: 38px;
+}
+
+.post {
+	margin-left: 60px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.post .datum {
+	position: relative;
+	width: 20px;
+}
+.post .content {
+	position: relative;
+	top: -50px;
+	left: 80px;
+	width: 310px;
+}
+
+#navigation {
+	width: 360px;
+}
