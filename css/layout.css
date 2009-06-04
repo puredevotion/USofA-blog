@@ -91,7 +91,72 @@
 	float: left;
 }
 
+.remix {
+	margin-top: 5px;
+}
+
+#favouriteTunes {
+	margin-bottom: 8px;
+}
+
+.sell {
+	text-align: right;
+}
+
+.amazon {
+	margin-top: 5px;
+}
+
+.tunes {
+	text-align: left;
+	margin-top: 5px;
+}
+
+.itunes #itunes {
+	position: relative;
+}
+
+.itunes #EU {
+	position: relative;
+	top: -10px;
+	left: -20px;
+}
+.itunes #USA {
+	position: relative;
+}
+
 #gallerij {
 	position: relative;
 	float: right;
+}
+
+.label {
+	display:block;
+	background-color:#3C0;
+	width: 120px;
+	-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.label .titel {
+	font-family:Verdana, Geneva, sans-serif;
+	margin: 0px 0px;
+	margin-left: 8px;
+	line-height: 1em;
+}
+.label .active {
+	position: relative;
+	margin-left: 40px;
+	font-size: 0.6em;
+	color: #FFF;
+	line-height: 0.6em;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.label_button {
+	position: relative;
+	float:right;
+	margin-right: 4px;
+	top: -30px;
 }
