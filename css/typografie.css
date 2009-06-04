@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-size: 66.7%;
+	font-size: 1.0em;
+	line-height: 1.6em;
+}
+
+h1 {
+	margin: 0px;
+	pading: 0px;
+}
+
+h2 {
+	margin: 0px;
+	padding: 0px;
+}
+
+h3 {
+	margin: 0px;
+	padding: 0px;
+}
+
+.content {
+	font-family:Verdana, Geneva, sans-serif;
+}

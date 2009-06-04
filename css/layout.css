@@ -5,22 +5,22 @@
 }
 
 #header {
+	position: relative;
+	top: -70px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
 #titel {
 	margin-left: 110px;
+	float: left;
 }
 
 #twitter {
-	display: block;
 	float: right;
 	margin-right: 15px;
 	width:46px; 
 	height:46px;
-	background-image:url(../images/index_05.png);
-	background-repeat:no-repeat;
 }
 
 #twitter:hover {
@@ -36,6 +36,8 @@
 }
 
 #banner {
+	position: relative;
+	top: 60px;
 	margin-top: 10px;
 	background-image:url(../images/index_15.png);
 	background-repeat: repeat-x;
@@ -43,6 +45,12 @@
 
 #usa-vlag {
 	margin-left: 38px;
+}
+
+#blogrol {
+	width: 500px;
+	float: left;
+	margin-top: 10px;
 }
 
 .post {
@@ -64,4 +72,26 @@
 
 #navigation {
 	width: 360px;
+	float: right;
+	margin-top: 10px;
+}
+
+#labels {
+	position: relative;
+	float: right;
+}
+
+#reading {
+	position: relative;
+	float: left;
+}
+
+#listening {
+	position: relative;
+	float: left;
+}
+
+#gallerij {
+	position: relative;
+	float: right;
 }
