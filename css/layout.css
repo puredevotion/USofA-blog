@@ -37,7 +37,7 @@
 
 #banner {
 	position: relative;
-	top: 60px;
+	top: 65px;
 	margin-top: 10px;
 	background-image:url(../images/index_15.png);
 	background-repeat: repeat-x;
@@ -54,20 +54,20 @@
 }
 
 .post {
-	margin-left: 60px;
+	margin-left: 50px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
 .post .datum {
 	position: relative;
-	width: 20px;
+	width: 50px;
 }
 .post .content {
 	position: relative;
-	top: -50px;
+	top: -60px;
 	left: 80px;
-	width: 310px;
+	width: 340px;
 }
 
 #navigation {
