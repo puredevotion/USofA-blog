@@ -1,5 +1,30 @@
 @charset "utf-8";
 /* CSS Document */
+@font-face {
+  font-family: Charis SIL;
+  src: url(inc/CharisSILR.ttf) format("truetype");
+  /* font-weight, font-style ==> default to normal */
+}
+ 
+@font-face {
+  font-family: Charis SIL;
+  src: url(inc/CharisSILI.ttf) format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Charis SIL;
+  src: url(inc/CharisSILB.ttf) format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Charis SIL;
+  src: url(inc/CharisSILBI.ttf) format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+
 body {
 	font-size: 66.7%;
 	font-size: 1.0em;
@@ -8,7 +33,7 @@ body {
 
 h1 {
 	margin: 0px;
-	pading: 0px;
+	padding: 0px;
 }
 
 h2 {
@@ -29,10 +54,11 @@ h3 {
 .content h2 {
 	font-size: 2.6em;
 	color: #C00;
-	font-family: "Charis SIL", "Charis sil" "Charsilsil";
-	font-style:italic;
+	font-family: "Charis SIL", Charis SIL, "Charis sil", Georgia;
+	font-style: italic;
 	margin-bottom: 5px;
 }
+
 .post .datum {
 	font-family: "High Tower Text", Georgia;
 	font-size: 2em;
