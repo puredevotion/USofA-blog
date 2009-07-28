@@ -1,3 +1,7 @@
+<?php
+	if(isset($_GET['contact']))
+		$andere_pagina = true;
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -21,6 +25,9 @@
 	  });
 	});
 	</script>
+	<?php
+	if(!$andere_pagina){
+		?>
 	<script type="text/javascript">
 		 jQuery(document).ready(function($) {
 			$('a[rel*=facebox]').facebox()
@@ -39,6 +46,7 @@
 		 
 		 })
 	</script>
+	<?php } ?>
 	<style>
 		p {
 		padding: 0 0 1em;
@@ -68,11 +76,30 @@
 	<div id="container">
 		<div id="header">
    		<img id="titel" src="images/header_03.png" width="361" alt="Thijs in de US of A" />
-   		<img id="rss" src="images/index_07.png" width="46" height="46" alt="abbonneer via RSS!" /><img id="twitter" src="images/index_05.gif" width="46" height="46" alt="Follow me on Twitter!" />
+   		<a href="http://feeds.feedburner.com/ThijsInDeUsOfA" id="rss_link"> </a>
+			<a href="http://www.twitter.com/thijsbaars" id="twitter_link"> </a>
 	</div>
-   
 	<div id="body">
 		<div id="blogrol">
+		<?php
+			if($andere_pagina && isset($_POST['email']))
+			{
+				$mysqli = @new mysqli('sql10.pcextreme.nl', '26779thijs', 'topdesign', '26779thijs');
+				
+				if ($mysqli->connect_errno) {
+					 die('Connection Error: ' . $mysqli->connect_errno);
+				}
+				$naam  =  htmlentities($_POST['naam'], ENT_QUOTES, 'utf-8');
+				if(preg_match('/^[^\W][a-zA-Z0-9_\.]+(\.[a-zA-Z0-9_]+)*\@[a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)*\.[a-zA-Z]{2,4}$/', $_POST['email']))
+					$email = $_POST['email'];
+				else {die("Er Ging iets fout bij je email adres. is het een bestaand adres?");}
+				
+				if ($mysqli->query("INSERT INTO gebruikers (naam, email) VALUES ('$naam', '$email')") === TRUE) {
+					printf("Bedankt voor je anmelding! We'll keep you posted!");
+				}
+			}
+			else {
+		?>	
 			<div class="post">
 				<div class="datum">
 					<div class="numeriek">26</div>Juni
@@ -119,5 +146,6 @@
    
     	</div> 
 	</div>
+	<?php } ?>
 </body>
 </html>

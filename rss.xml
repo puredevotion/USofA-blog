@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+
+<channel>
+	<link>http://www.thijsbaars.nl</link>
+	<description>De RSS Feed van Thijs Baars' zijn blog: Thijs in de US of A</description>
+			<managingEditor>editor@thijsbaars.nl</managingEditor>
+   	<webMaster>baars@wisc.edu</webMaster>
+	<title>Thijs in de US of A!</title>
+	<item>
+		<title>Demo bericht</title>
+		<description>Dit is het eerste bericht ;-) \n Hiermee probeer ik onder andere HTML uit in RSS, en Feedburner.</description>
+		<link>http://www.thijsbaars.nl/index.html</link>
+		<pubDate>Mon, 27 Jul 2009 20:00:00 GMT</pubDate>
+	</item>
+</channel>
+</rss>

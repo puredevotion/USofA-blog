@@ -1,0 +1,60 @@
+<html>
+	<head>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<script type="text/javascript">
+$(document).ready(function()
+{
+  //hide the all of the element with class msg_body
+  $(".msg_body").hide();
+  //toggle the componenet with class msg_body
+  $(".msg_head").click(function()
+  {
+    $(this).next(".msg_body").slideToggle(600);
+  });
+});
+</script>
+<title>js. test</title>
+
+<style>
+	p {
+	padding: 0 0 1em;
+	}
+	.msg_list {
+	margin: 0px;
+	padding: 0px;
+	width: 383px;
+	}
+	.msg_head {
+	padding: 5px 10px;
+	cursor: pointer;
+	position: relative;
+	margin:1px;
+	}
+	.msg_body {
+	padding: 5px 5px 5px;
+	}
+</style>
+
+</head>
+<body>
+Op dit moment is deze website nog in volle ontwikkeling. Voordat ik vertrek is hij zeker weten af.<br />
+		Tot die tijd kan ik je op de hoogte houden via e-mail, of RSS. 
+		<div class="msg_list">
+			<p class="msg_head"><img src="ja.png" alt="Ja ik wil!" /></p>
+			<div class="msg_body">
+				<form action="index.php?contact=jaIkWil"  method="post">
+					<label for="naam">Naam: </label><input type="text" name="naam" id="naam" style="position: relative; left: 23px; border-style: solid;border-color: #F4F4F8;" /><br />
+					<label for="email">E-mail: </label><input type="text" name="email" id="email" style="position: relative; left: 20px;border-style: solid;border-color: #F4F4F8;"/>
+					<input type="submit" value="Verzend" name="submit" id="submit" style="position: relative; left: 50px; top: -20px; width: 80px; height: 50px;" />
+				</form>
+			</div>
+			
+			<p class="msg_head"><img src="nee.png" alt="Nee, ik haat je!" style="margin-left: 5px; border-color: #000; border-width: 1px;"/></p>
+			<div class="msg_body">
+			Ook geen RSS? Dat kan via <a href="http://feeds.feedburner.com/ThijsInDeUsOfA">hier</a><br />
+			<strong><a href="#" onclick="history.go(-1)">NEE! ik wil hier weg</a></strong>
+			</div>
+
+		</div>
+	</body>
+	</html>

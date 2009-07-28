@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Facebox Demo</title>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="RSS Feed van demotest" />
+
+<script src="facefiles/jquery-1.2.2.pack.js" type="text/javascript"></script>
+<link href="facefiles/facebox.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="facefiles/facebox.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+  //hide the all of the element with class msg_body
+  $(".msg_body").hide();
+  //toggle the componenet with class msg_body
+  $(".msg_head").click(function()
+  {
+    $(this).next(".msg_body").slideToggle(600);
+  });
+});
+</script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+      $('a[rel*=facebox]').facebox()
+//		jQuery.facebox("<div>This is the contents of a hidden DIV on the page, with ID='mydiv' and style set to 'display:none'<br /><br /><a href='http://www.dynamicdrive.com/dynamicindex4/facebox/index.htm'>Facebox image and content viewer (v 1.1)</a></div>");
+  	  jQuery.facebox(function() {
+  			jQuery.get('code.html', function(data) {
+    			$(".msg_body").hide();
+				  //toggle the componenet with class msg_body
+				  $(".msg_head").click(function()
+				 {
+					 $(this).next(".msg_body").slideToggle(600);
+				});
+				jQuery.facebox('<div style="font-family: verdana, arial, modern; font-size: 13px;">' + data + '</div>')
+  			})
+		}) 
+	 
+	 })
+</script>
+<style>
+	p {
+	padding: 0 0 1em;
+	}
+	.msg_list {
+	margin: 0px;
+	padding: 0px;
+	width: 383px;
+	}
+	.msg_head {
+	padding: 5px 10px;
+	cursor: pointer;
+	position: relative;
+	margin:1px;
+	}
+	.msg_body {
+	padding: 5px 10px 15px;
+	background-color:#F4F4F8;
+	}
+</style>
+
+</head>
+<body>
+
+<p><a href="#mydiv" rel="facebox">View DIV with id="mydiv" on the page</a></p>
+
+<div id="mydiv" style="display:none">
+This is the contents of a hidden DIV on the page, with ID="mydiv" and style set to "display:none"<br /><br />
+<a href="http://www.dynamicdrive.com/dynamicindex4/facebox/index.htm">Facebox image and content viewer (v 1.1)</a>
+</div>
+
+</body>
+</html>

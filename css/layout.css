@@ -1,5 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
+html, body, p {
+	margin: 0 0;
+	padding: 0 0;
+}
+img {
+	border: #FFF 0px solid;
+}
+
 #container {
 	width: 960px;
 }
@@ -16,24 +24,29 @@
 	float: left;
 }
 
-#twitter {
+#twitter_link {
 	float: right;
 	margin-right: 15px;
-	width:46px; 
+	width:46px;
 	height:46px;
+	text-decoration:none;
+	display: block;
+	background-image: url(../images/sprite.png);
+	background-position: 46px 46px;
 }
+#twitter_link:hover, #twitter_link:active, #twitter_link:focus {background-position: 46px 0;}
 
-#twitter:hover {
-	background-position: -46px 0;
-}
-	
-
-#rss {
+#rss_link {
 	float: right;
 	margin-right: 10px;
-	width:46px; 
+	width:46px;
 	height:46px;
+	text-decoration:none;
+	display: block;
+	background-image: url(../images/sprite.png);
+	background-position: 0 46px;
 }
+#rss_link:hover, #rss_link:active, #rss_link:focus {background-position: 0 0;}
 
 #banner {
 	position: relative;
@@ -134,9 +147,10 @@
 	display:block;
 	background-color:#3C0;
 	width: 120px;
-	-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
+	border-radius: 11px;
+	-moz-border-radius: 11px;
+	-webkit-border-radius: 11px;
+	height: 25px;
 }
 
 .label .titel {
@@ -157,6 +171,8 @@
 .label_button {
 	position: relative;
 	float:right;
+	margin-top: 1px;
 	margin-right: 4px;
+	vertical-align: middle;
 
 }

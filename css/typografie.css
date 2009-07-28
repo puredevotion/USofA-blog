@@ -2,25 +2,25 @@
 /* CSS Document */
 @font-face {
   font-family: Charis SIL;
-  src: url(inc/CharisSILR.ttf) format("truetype");
+  src: url(../inc/CharisSILR.ttf) format("truetype");
   /* font-weight, font-style ==> default to normal */
 }
  
 @font-face {
   font-family: Charis SIL;
-  src: url(inc/CharisSILI.ttf) format("truetype");
+  src: url(../inc/CharisSILI.ttf) format("truetype");
   font-style: italic;
 }
 
 @font-face {
   font-family: Charis SIL;
-  src: url(inc/CharisSILB.ttf) format("truetype");
+  src: url(../inc/CharisSILB.ttf) format("truetype");
   font-weight: bold;
 }
 
 @font-face {
   font-family: Charis SIL;
-  src: url(inc/CharisSILBI.ttf) format("truetype");
+  src: url(../inc/CharisSILBI.ttf) format("truetype");
   font-style: italic;
   font-weight: bold;
 }
