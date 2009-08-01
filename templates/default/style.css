@@ -1,0 +1,282 @@
+@charset "utf-8";
+html, body, p, div, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+img {
+	border: #FFF 0px solid;
+}
+
+#container {
+	width: 960px;
+}
+
+#header {
+	position: relative;
+	top: -70px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#titel {
+	margin-left: 110px;
+	float: left;
+}
+
+#twitter_link {
+	float: right;
+	margin-right: 15px;
+	width:46px;
+	height:46px;
+	text-decoration:none;
+	display: block;
+	background-image: url(images/sprite.png);
+	background-position: 46px 46px;
+}
+#twitter_link:hover, #twitter_link:active, #twitter_link:focus {background-position: 46px 0;}
+
+#rss_link {
+	float: right;
+	margin-right: 10px;
+	width:46px;
+	height:46px;
+	text-decoration:none;
+	display: block;
+	background-image: url(images/sprite.png);
+	background-position: 0 46px;
+}
+#rss_link:hover, #rss_link:active, #rss_link:focus {background-position: 0 0;}
+
+#banner {
+	position: relative;
+	top: 65px;
+	margin-top: 10px;
+	background-image:url(images/banner.png);
+	background-repeat: repeat-x;
+}
+
+#usa-vlag {
+	margin-left: 38px;
+}
+
+#blogrol {
+	width: 500px;
+	float: left;
+	margin-top: 10px;
+}
+
+.post {
+	margin-left: 50px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.post .datum {
+	position: relative;
+	width: 50px;
+}
+.post .content {
+	position: relative;
+	top: -60px;
+	left: 80px;
+	width: 340px;
+}
+
+#navigation {
+	width: 360px;
+	float: right;
+	margin-top: 10px;
+}
+
+#labels {
+	position: relative;
+	float: right;
+}
+
+#reading {
+	position: relative;
+	float: left;
+}
+
+#listening {
+	position: relative;
+	float: left;
+}
+
+.remix {
+	margin-top: 5px;
+}
+
+#favouriteTunes {
+	margin-bottom: 8px;
+}
+
+.sell {
+	text-align: right;
+}
+
+.amazon {
+	margin-top: 5px;
+}
+
+.tunes {
+	text-align: left;
+	margin-top: 5px;
+}
+
+.itunes #itunes {
+	position: relative;
+}
+
+.itunes #EU {
+	position: relative;
+	top: -10px;
+	left: -20px;
+}
+.itunes #USA {
+	position: relative;
+}
+
+#gallerij {
+	position: relative;
+	float: right;
+}
+
+.label {
+	display:block;
+	background-color:#3C0;
+	width: 120px;
+	border-radius: 11px;
+	-moz-border-radius: 11px;
+	-webkit-border-radius: 11px;
+	height: 25px;
+}
+
+.label .titel {
+	font-family:Verdana, Geneva, sans-serif;
+	margin: 0px 0px;
+	margin-left: 8px;
+	line-height: 1em;
+}
+.label .active {
+	position: relative;
+	margin-left: 40px;
+	font-size: 0.6em;
+	color: #FFF;
+	line-height: 0.6em;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.label_button {
+	position: relative;
+	float:right;
+	margin-top: 1px;
+	margin-right: 4px;
+	vertical-align: middle;
+
+}
+
+/***************************************
+*
+* Typografie
+*
+****************************************/
+
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+  font-family: Charis SIL;
+  src: url(inc/CharisSILR.ttf) format("truetype");
+  /* font-weight, font-style ==> default to normal */
+}
+ 
+@font-face {
+  font-family: Charis SIL;
+  src: url(inc/CharisSILI.ttf) format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Charis SIL;
+  src: url(inc/CharisSILB.ttf) format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Charis SIL;
+  src: url(inc/CharisSILBI.ttf) format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+
+body {
+	font-size: 66.7%;
+	font-size: 1.0em;
+	line-height: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0px;
+	padding: 0px;
+}
+
+.content {
+	font-family:Verdana, Geneva, sans-serif;
+	text-align: justify;
+}
+
+.content h2 {
+	font-size: 2.6em;
+	color: #C00;
+	font-family: "Charis SIL", Charis SIL, "Charis sil", Georgia;
+	font-style: italic;
+	margin-bottom: 5px;
+}
+
+.post .datum {
+	font-family: "High Tower Text", Georgia;
+	font-size: 2em;
+	text-align: center;
+	color: #40403e;
+}
+.datum .numeriek {
+	display: block;
+	font-size: 2.1em;
+	text-align: center;
+	margin-bottom: 2px;
+}
+
+.book {
+	line-height: 0.8em;
+	margin-bottom: 10px;
+}
+
+.author {
+	font-family: Verdana, Geneva, sans-serif;
+	font-style:italic;
+	font-size: 0.9em;
+}
+
+.book h3 {
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+}
+
+.song {
+	line-height: 0.8em;
+	margin-bottom: 10px;
+}
+
+.song h3 {
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	margin-bottom: 5px;
+}
+
+.song .remix {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 0.9em;
+	font-style: italic;
+}
